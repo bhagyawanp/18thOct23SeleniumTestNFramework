@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.Resources.Listners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.TestCases.loginTestCases">
+        <methods>
+          <include name="verifyInValidLogin"/>
+          <include name="quitBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="ExtentReport"/>
+          <include name="endReport"/>
+          <include name="verifyValidLogin"/>
+        </methods>
+      </class> <!-- com.TestCases.loginTestCases -->
+      <class name="com.TestCases.registerTestCases">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="verifyValidRegisteration"/>
+          <include name="launchBrowser"/>
+          <include name="ExtentReport"/>
+          <include name="endReport"/>
+        </methods>
+      </class> <!-- com.TestCases.registerTestCases -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
